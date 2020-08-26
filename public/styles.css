@@ -9,6 +9,21 @@ body {
   background-color: white;
 }
 
+ul {
+  list-style-type: circle;
+}
+
+li {
+  line-height: 2em;
+}
+
+.col {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*---------------------------------------*/
+/* -------------HEADER START------------ */
 #logo-style {
   width: 19%;
   margin-top: 0.5%;
@@ -58,6 +73,24 @@ a.ui.dropdown .menu>.item:hover {
   color: red;
 }
 
+.navbar-center {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+i.dropdown.icon {
+  margin-left: 3px !important;
+}
+
+/* -------------HEADER END-------------- */
+/*---------------------------------------*/
+
+
+/*---------------------------------------*/
+/* -------------FOOTER START------------ */
 .dotted-line {
   white-space: nowrap;
   position: relative;
@@ -86,49 +119,8 @@ a.ui.dropdown .menu>.item:hover {
   background-image: -o-linear-gradient(left, #f0f0f0, #d4b5b0, #f0f0f0);
 }
 
-ul {
-  list-style-type: circle;
-}
-li {
-  line-height: 2em;
-}
-
-.navbar-center {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
-
 .footer-height {
   height: 0.2rem;
-}
-
-.col {
-  margin: 0px;
-  padding: 0px;
-}
-
-.testo:hover {
-  color: #383e56;
-}
-
-i.dropdown.icon {
-  margin-left: 3px !important;
-}
-
-.carousel-img {
-  width: 100%
-}
-
-.carousel-img-slim {
-  display: none;
-}
-
-.carousel-item {
-  padding: 0 0 0 0px;
-  backface-visibility: visible;
 }
 
 .footer-style {
@@ -144,6 +136,33 @@ i.dropdown.icon {
   margin-bottom: 0px;
 }
 
+/* -------------FOOTER END-------------- */
+/*---------------------------------------*/
+
+
+/*---------------------------------------*/
+/* -------------HOME START-------------- */
+
+.carousel-img {
+  width: 100%
+}
+
+.carousel-img-slim {
+  display: none;
+}
+
+.carousel-item {
+  padding: 0 0 0 0px;
+  backface-visibility: visible;
+}
+
+/* -------------HOME END---------------- */
+/*---------------------------------------*/
+
+
+/*-------------------------------------------*/
+/* -------------SERVICES START-------------- */
+
 .service-portrait {
   display: none;
 }
@@ -156,14 +175,14 @@ i.dropdown.icon {
 }
 .MuiCardActions-spacing{
   /*damit der button unten bleibt*/
-       margin-top:auto;
-  }
+  margin-top:auto;
+}
 
-  #big-leistung{
-    display: none;
-  }
+#big-leistung{ /* for very big screens */
+  display: none;
+}
 
-.hr-duck {
+.hr-duck { /* on paper */
   border: 0;
   height: 1px;
   text-align: center;
@@ -174,7 +193,7 @@ i.dropdown.icon {
   margin-bottom: 3rem;
 }
 
-.hr-duck:after {
+.hr-duck:after { /* on paper */
   content: "";
   display: inline-block;
   position: relative;
@@ -184,23 +203,19 @@ i.dropdown.icon {
   color: #8c8b8b;
   font-size: 18px;
 }
-
 .paper-header {
   text-align: center;
   margin-bottom: 3rem;
   color: #383e56;
 }
-
 .paper-img-style {
   width: 100%;
   border-radius: 1%;
 }
-
 .paper-text-style {
   font-size: 1.35vw;
   padding: 2em;
 }
-
 .paper-text-style-slim {
   display: none;
   text-align: center;
@@ -210,20 +225,25 @@ i.dropdown.icon {
   font-size: 1.3em;
   padding: 3em;
 }
-
 .paper-img-style-slim {
   width: 100%;
   display: none;
 }
-
 .fa-arrow-left:before {
   font-size: 2em;
   color: #383e56;
 }
 
-.arrow-div {
+.arrow-div { /* back button on mobile version */
   text-align: left;
 }
+
+/* -------------SERVICES END---------------- */
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/* -------------ABOUT ME START-------------- */
 
 .img-holder {
   display: flex;
@@ -323,13 +343,99 @@ i.dropdown.icon {
   color: rgba(212, 181, 176, 0.8);
 }
 
+  /* ---------- sprechblase start----------- */
+  .blockquote-wrapper {
+    display: flex;
+    padding: 0 20px;
+    font-style: italic;
+  }
+  .blockquote {
+    position: relative;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
+  }
+  .blockquote h1 {
+    position: relative; / for pseudos /
+    color: #383e56;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #fff;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 25px;
+  }
+  .blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid #383e56;
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+  }
+  .blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #fff;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+  }
+  @media all and (min-width: 600px) {
+    .blockquote h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    }
+  }
+  .blockquote h4 {
+    position: relative;
+    color: #383e56;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+  }
+  .blockquote h4:first-letter {
+    margin-left:-12px;
+  }
+  .holder4{
+    width: 100%;
+    height: auto;
+    color: #383e56;
+  }
+
+  /* ---------- sprechblase ende ----------- */
+
+/* -------------ABOUT ME END---------------- */
+/*-------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/* -------------IMPRESSUM & DATENSCHUTZ START-------------- */
 .dsgvo-style {
   width: 100%;
   padding: 3% 15%;
   color: #383e56;
 }
+/* -------------IMPRESSUM & DATENSCHUTZ END---------------- */
+/*----------------------------------------------------------*/
 
-/* NEW CONTACT NEW CONTACT NEW CONTACT */
+
+
+/*------------------------------------------*/
+/* -------------CONTACT START-------------- */
 .form {
   width: 100%;
   padding: 15px;
@@ -552,7 +658,6 @@ input {
   height: 30px;
 }
 
-/* Conatct end */
 .form2 {
   width: 70%;
   height: auto;
@@ -708,335 +813,258 @@ span {
   display: none;
 }
 
-/* ---------- SPRECHBLASE ABOUT ME ----------- */
-.blockquote-wrapper {
-       display: flex;
-       padding: 0 20px;
-       font-style: italic;
-    }
+/* -------------CONTACT END---------------- */
+/*-------------------------------------------*/
 
 
-    .blockquote {
-        position: relative;
-        max-width: 620px;
-        margin: 80px auto;
-        align-self: center;
-    }
-
-    .blockquote h1 {
-
-        position: relative; / for pseudos /
-        color: #383e56;
-        font-size: 2.8rem;
-        font-weight: normal;
-        line-height: 1;
-        margin: 0;
-        border: 2px solid #fff;
-        border: solid 2px;
-        border-radius:20px;
-        padding: 25px;
-    }
-
-
-    .blockquote h1:after {
-        content:"";
-        position: absolute;
-        border: 2px solid #383e56;
-        border-radius: 0 50px 0 0;
-        width: 60px;
-        height: 60px;
-        bottom: -60px;
-        left: 50px;
-        border-bottom: none;
-        border-left: none;
-        z-index: 3;
-    }
-
-    .blockquote h1:before {
-        content:"";
-        position: absolute;
-        width: 80px;
-        border: 6px solid #fff;
-        bottom: -3px;
-        left: 50px;
-        z-index: 2;
-    }
-
-
-    @media all and (min-width: 600px) {
-        .blockquote h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-       }
-
-    }
-
-
-    .blockquote h4 {
-        position: relative;
-        color: #383e56;
-        font-size: 1.3rem;
-        font-weight: 400;
-        line-height: 1.2;
-        margin: 0;
-        padding-top: 15px;
-        z-index: 1;
-        margin-left:150px;
-        padding-left:12px;
-    }
-
-
-    .blockquote h4:first-letter {
-      margin-left:-12px;
-    }
-
-  .holder4{
-    width: 100%;
-    height: auto;
-	  color: #383e56;
-  }
-
-/* ---------- SPRECHBLASE ABOUT ME ----------- */
-
-/* NEW CONTACT NEW CONTACT NEW CONTACT */
+/* Allgemein für Geräte im Hochformat */
 @media screen and (orientation : portrait) {
-  #logo-style {
-    width: 80%;
-  }
+  /* header START */
+    #logo-style {
+      width: 80%;
+    }
+  /* header end */
 
-  .carousel-img {
-    display: none;
-  }
+  /* footer START */
+    .copyright-text{
+      display: none;
+    }
+    .copyright-text-slim{
+      display: block;
+    }
+  /* footer END */
 
-  .carousel-img-slim {
-    display: block;
-    width: 100%;
-  }
-  .copyright-text{
-    display: none;
-  }
-  .copyright-text-slim{
-    display: block;
-  }
+  /* home START */
+    .carousel-img {
+      display: none;
+    }
+    .carousel-img-slim {
+      display: block;
+      width: 100%;
+    }
+  /* home END */
 
-  .service-landscape {
-    display: none;
-  }
+  /* service START */
+    .service-landscape {
+      display: none;
+    }
+    .service-portrait {
+      display: block;
+    }
+    .paper-text-style-slim {
+      display: block;
+    }
+    .paper-text-style {
+      display: none;
+    }
+    .paper-col-img-style {
+      display: none;
+    }
+    .paper-img-style-slim {
+      display: block;
+    }
+  /* service END */
 
-  .service-portrait {
-    display: block;
-  }
+  /* about-me START */
+    .img-holder-slim {
+      display: flex;
+    }
+    .img-holder{
+      display: none;
+    }
+    .about-me-heading {
+      font-size: 8vw;
+    }
+    .about-me-pic{
+      display: none;
+    }
+    .about-me-pic-slim{
+      display: block;
+    }
+    .about-me-heading2 {
+      font-size: 2em;
+      padding: 5%;
+    }
+    .holder3 {
+      padding: 1em;
+    }
+    .div3-heading {
+      padding-top: 0.8em;
+      font-size: 2.6em;
+    }
+    .div3-text {
+      font-size: 1.5em;
+    }
+    div.blockquote {
+      margin: 40px auto;
+    }
+    .blockquote h1 {
+      font-size: 2.1em;
+    }
+  /* about-me END   */
 
-  .paper-text-style-slim {
-    display: block;
-  }
-
-  .paper-text-style {
-    display: none;
-  }
-
-  .paper-col-img-style {
-    display: none;
-  }
-
-  .paper-img-style-slim {
-    display: block;
-  }
-
-  .img-holder-slim {
-    display: flex;
-  }
-  .img-holder{
-    display: none;
-  }
-
-  .about-me-heading {
-    font-size: 8vw;
-  }
-  .about-me-pic{
-    display: none;
-  }
-  .about-me-pic-slim{
-    display: block;
-  }
-  .about-me-heading2 {
-    font-size: 2em;
-    padding: 5%;
-  }
-  .holder3 {
-    padding: 1em;
-  }
-
-  .div3-heading {
-    padding-top: 0.8em;
-    font-size: 2.6em;
-  }
-  .div3-text {
-    font-size: 1.5em;
-  }
-
-  div.blockquote {
-    margin: 40px auto;
-  }
-  .blockquote h1 {
-    font-size: 2.1em;
-  }
-
-  /* contact form */
-  .form2 {
-    float: none;
-    width: 100%;
-    height: auto;
-    margin-bottom: 4em;
-  }
-
-  .google-maps {
-    width: 100%;
-    margin-top: 1em;
-  }
-
-  .information-circles {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .contact-h3{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .div2{
-    right: 0;
-  }
-  #contact-card-text{
-    font-size: 1.1em;
-  }
-  .contact-h3-slim{
-    display: block;
-  }
-  .contact-h3{
-    display: none;
-  }
-  .contact-h3-style{
-    padding-bottom: 0%;
-  }
-  /* contact form */
-  .box>.icon:hover>.image {
-    background: #383e56;
-  }
-  .ente-img {
-    widows: 2em;
-  }
+  /* contact START */
+    .form2 {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 4em;
+    }
+    .google-maps {
+      width: 100%;
+      margin-top: 1em;
+    }
+    .information-circles {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .contact-h3{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .div2{
+      right: 0;
+    }
+    #contact-card-text{
+      font-size: 1.1em;
+    }
+    .contact-h3-slim{
+      display: block;
+    }
+    .contact-h3{
+      display: none;
+    }
+    .contact-h3-style{
+      padding-bottom: 0%;
+    }
+    .box>.icon:hover>.image {
+      background: #383e56;
+    }
+    .ente-img {
+      widows: 2em;
+    }
+  /* contact END   */
 }
 
+/* 13 Zoll Geräte im Querformat,   13 inch devices with orientation landscape */
 @media screen and (max-width: 991px) and (min-width: 768px) and (orientation: landscape) {
-  /* contact form */
-  .form2 {
-    float: none;
-    width: 100%;
-    height: auto;
-    margin-bottom: 4em;
-  }
-  .google-maps {
-    width: 100%;
-    margin-top: 1em;
-  }
-  .information-circles {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .contact-h3{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .div2{
-    right: 0;
-  }
-  #contact-card-text{
-    font-size: 1.1em;
-  }
-  .contact-h3-slim{
-    display: block;
-  }
-  .contact-h3{
-    display: none;
-  }
-  .contact-h3-style{
-    padding-bottom: 0%;
-  }
-  /* contact form */
-  .box>.icon:hover>.image {
-    background: #383e56;
-  }
-  .ente-img {
-    widows: 2em;
-  }
+  /* contact START */
+    .form2 {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 4em;
+    }
+    .google-maps {
+      width: 100%;
+      margin-top: 1em;
+    }
+    .information-circles {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .contact-h3{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .div2{
+      right: 0;
+    }
+    #contact-card-text{
+      font-size: 1.1em;
+    }
+    .contact-h3-slim{
+      display: block;
+    }
+    .contact-h3{
+      display: none;
+    }
+    .contact-h3-style{
+      padding-bottom: 0%;
+    }
+    .box>.icon:hover>.image {
+      background: #383e56;
+    }
+    .ente-img {
+      widows: 2em;
+    }
+  /* contact END */
 }
 
+/* standard iPad/tablet in portrait mode*/
 @media screen and (max-width: 991px) and (min-width: 768px) and (orientation: portrait) {
-  /*standard iPad*/
-  #logo-style {
-    width: 50%;
-  }
-  .about-me-pic{
-    display: block;
-  }
-  .about-me-pic-slim{
-    display: none;
-  }
-  /* contact form */
-  .form2 {
-    float: none;
-    width: 100%;
-    height: auto;
-    margin-bottom: 4em;
-  }
-  .google-maps {
-    width: 100%;
-    margin-top: 1em;
-  }
-  .information-circles {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .contact-h3{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .div2{
-    right: 0;
-  }
-  #contact-card-text{
-    font-size: 1.1em;
-  }
-  .contact-h3-slim{
-    display: block;
-  }
-  .contact-h3{
-    display: none;
-  }
-  .contact-h3-style{
-    padding-bottom: 0%;
-  }
-  /* contact form */
-  .box>.icon:hover>.image {
-    background: #383e56;
-  }
-  .ente-img {
-    widows: 2em;
-  }
-  .img-holder-slim {
-    display: flex;
-    background-attachment: scroll;
-    background-position: center center;
-  }
-  .img-holder{
-    display: none;
-  }
+  /* header */
+    #logo-style {
+      width: 50%;
+    }
+  /* header */
+
+  /* about me START */
+    .about-me-pic{
+      display: block;
+    }
+    .about-me-pic-slim{
+      display: none;
+    }
+    .img-holder-slim {
+      display: flex;
+      background-attachment: scroll;
+      background-position: center center;
+    }
+    .img-holder{
+      display: none;
+    }
+  /* about me END */
+
+  /* contact START */
+    .form2 {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 4em;
+    }
+    .google-maps {
+      width: 100%;
+      margin-top: 1em;
+    }
+    .information-circles {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .contact-h3{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .div2{
+      right: 0;
+    }
+    #contact-card-text{
+      font-size: 1.1em;
+    }
+    .contact-h3-slim{
+      display: block;
+    }
+    .contact-h3{
+      display: none;
+    }
+    .contact-h3-style{
+      padding-bottom: 0%;
+    }
+    .box>.icon:hover>.image {
+      background: #383e56;
+    }
+    .ente-img {
+      widows: 2em;
+    }
+  /* contact END */
 }
+
+/* iPad PRO 12.9 inch */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    /*iPad PRO 12.9 inch*/
+  /* about-me START*/
     .img-holder{
       display: none;
     }
@@ -1051,8 +1079,10 @@ span {
     .about-me-pic-slim{
       display: none;
     }
+  /* about-me END*/
 }
 
+/* big screens */
 @media screen and (min-width: 2400px) {
   .about-me-pic{
     display: block;
@@ -1068,11 +1098,13 @@ span {
   }
 }
 
+/*css for iOS devices
+because: background-attachment: fixed does not work on them*/
+
 @supports (-webkit-touch-callout: none) {
-    /* CSS specific to iOS devices */
-    .img-holder-slim{
-        display:flex;
-        background-attachment: scroll;
-        background-position: center center;
-    }
+  .img-holder-slim{
+    display:flex;
+    background-attachment: scroll;
+    background-position: center center;
   }
+}
