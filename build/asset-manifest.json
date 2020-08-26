@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/static/js/main.7e791c02.chunk.js",
+    "main.js.map": "/static/js/main.7e791c02.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
+    "static/js/2.da1df1ed.chunk.js": "/static/js/2.da1df1ed.chunk.js",
+    "static/js/2.da1df1ed.chunk.js.map": "/static/js/2.da1df1ed.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f901645e7e57f8e3a2ac6f0fe70be3c9.js": "/precache-manifest.f901645e7e57f8e3a2ac6f0fe70be3c9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.da1df1ed.chunk.js.LICENSE.txt": "/static/js/2.da1df1ed.chunk.js.LICENSE.txt",
+    "static/media/about_me_scroll_img1.jpg": "/static/media/about_me_scroll_img1.bd5d5388.jpg",
+    "static/media/about_me_scroll_img1_slim.jpg": "/static/media/about_me_scroll_img1_slim.6d81592b.jpg",
+    "static/media/carousel_1.jpg": "/static/media/carousel_1.9b221b32.jpg",
+    "static/media/carousel_1_slim.jpg": "/static/media/carousel_1_slim.fb6ec03a.jpg",
+    "static/media/carousel_2.jpg": "/static/media/carousel_2.d477802f.jpg",
+    "static/media/carousel_2_slim.jpg": "/static/media/carousel_2_slim.8b0505ad.jpg",
+    "static/media/carousel_3.jpg": "/static/media/carousel_3.cff18b06.jpg",
+    "static/media/carousel_3_slim.jpg": "/static/media/carousel_3_slim.8a8697d8.jpg",
+    "static/media/ente2.png": "/static/media/ente2.2ab2be54.png",
+    "static/media/geburtsvorbereitung_details.jpg": "/static/media/geburtsvorbereitung_details.a6d1cba7.jpg",
+    "static/media/geburtsvorbereitung_details_slim.jpg": "/static/media/geburtsvorbereitung_details_slim.6273cad2.jpg",
+    "static/media/logo_final.jpg": "/static/media/logo_final.1e3b15a3.jpg",
+    "static/media/mutterkindpass_details.jpg": "/static/media/mutterkindpass_details.8cc3c861.jpg",
+    "static/media/mutterkindpass_details_slim.jpg": "/static/media/mutterkindpass_details_slim.98ac5a94.jpg",
+    "static/media/profilbild.jpg": "/static/media/profilbild.2505b1d6.jpg",
+    "static/media/profilbild_slim.jpg": "/static/media/profilbild_slim.aa9bb84f.jpg",
+    "static/media/schwangerenvorsorge_details.jpg": "/static/media/schwangerenvorsorge_details.8ee968bb.jpg",
+    "static/media/schwangerenvorsorge_details_slim.jpg": "/static/media/schwangerenvorsorge_details_slim.9136597d.jpg",
+    "static/media/service_1.jpg": "/static/media/service_1.9f9f2b3e.jpg",
+    "static/media/service_2.jpg": "/static/media/service_2.d8651b71.jpg",
+    "static/media/service_3.jpg": "/static/media/service_3.ecee439f.jpg",
+    "static/media/service_4.jpg": "/static/media/service_4.6e53421c.jpg",
+    "static/media/wochenbett_details.jpg": "/static/media/wochenbett_details.c7248ab7.jpg",
+    "static/media/wochenbett_details_slim.jpg": "/static/media/wochenbett_details_slim.6ba01b6d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83c3e0c4.js",
+    "static/js/2.da1df1ed.chunk.js",
+    "static/js/main.7e791c02.chunk.js"
+  ]
+}
